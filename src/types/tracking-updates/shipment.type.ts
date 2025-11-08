@@ -1,0 +1,25 @@
+export type Shipment = {
+  bookingNo: string;
+  bookingId?: string;
+  customerName?: string;
+  carrier?: string;
+  supplier?: string;
+  desc?: string;
+  status?: string;
+  statusType?: string;
+  location?: string;
+  bookingDate?: string;
+  lastUpdated?: string;
+  remarks?: string;
+  AWB?: string;
+  destination?: string;
+  estimatedDelivery?: string;
+  alerts?: string[];
+  needsAttention?: boolean;
+  trackingEvents?: number;
+  latestStatusDate?: string;
+  eta?: string;
+  followUpData?: string[];
+  docNo?: string;
+  customer?: string;
+};

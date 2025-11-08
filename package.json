@@ -1,0 +1,44 @@
+{
+  "name": "meridian-tracking-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^8.2.7",
+    "@mantine/core": "^8.2.7",
+    "@mantine/dates": "^8.2.7",
+    "@mantine/form": "^8.2.7",
+    "@mantine/hooks": "^8.2.7",
+    "@mantine/notifications": "^8.2.7",
+    "@tanstack/react-query": "^5.85.5",
+    "@tanstack/react-query-devtools": "^5.85.5",
+    "ag-grid-community": "^34.1.2",
+    "ag-grid-react": "^34.1.2",
+    "axios": "^1.11.0",
+    "dayjs": "^1.11.15",
+    "embla-carousel": "^8.5.2",
+    "embla-carousel-autoplay": "8.5.2",
+    "embla-carousel-react": "^8.5.2",
+    "lucide-react": "^0.525.0",
+    "motion": "^12.23.12",
+    "next": "15.3.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^20.19.11",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.8",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "15.3.4",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2"
+  }
+}

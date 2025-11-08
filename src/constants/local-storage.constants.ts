@@ -1,0 +1,4 @@
+export const LOCAL_STORAGE_KEYS = {
+    ACCESS_TOKEN: 'ACS_TKN',
+    REFRESH_TOKEN: 'REF_TKN'
+};
