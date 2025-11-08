@@ -1,6 +1,3 @@
-
-
-import { Console } from "console";
 import { useEffect } from "react";
 const baseUrl = "dev.meridian.ociuzerp.in"
 

@@ -49,7 +49,7 @@ export default function CustomerDetailsPage() {
     isLoading: userLoading,
     isError: userError,
   } = useMeQuery();
-  const { mutateAsync: resetPassword, isPending: isResetting } =
+  const { mutateAsync: resetPassword } =
     useResetPasseword();
 
   const [opened, { open, close }] = useDisclosure(false);
@@ -82,7 +82,7 @@ export default function CustomerDetailsPage() {
       };
 
       // 🔹 Call the reset password mutation
-      const response = await resetPassword(payload);
+      await resetPassword(payload);
 
       notifications.show({
         title: "Password changed successfully",

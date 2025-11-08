@@ -140,8 +140,8 @@ const QuoteForm: FC = () => {
     useDropDown<setmDocNoType>("SETM");
 
 
-    const { data: originCities, isLoading: isOriginCitiesLoading } = useCitiesQuery(form.values.originCountry);
-      const { data: destinationCities, isLoading: isDestinationCitiesLoading } = useCitiesQuery(form.values.destinationCountry);
+    const { data: originCities } = useCitiesQuery(form.values.originCountry);
+      const { data: destinationCities } = useCitiesQuery(form.values.destinationCountry);
     
 
   const serviceTypeMap: Record<string, string> = {
