@@ -55,19 +55,19 @@ const QuoteApprovePage: React.FC = () => {
       shipperPostalCode: "",
     },
     validate: {
-      contactEmail: (value) =>
-        !value
-          ? "Contact email is required"
-          : !/^\S+@\S+\.\S+$/.test(value)
-          ? "Invalid email"
-          : null,
-      contactNo: (value) =>
-        !value
-          ? "Contact number is required"
-          : !/^\d{7,15}$/.test(value)
-          ? "Contact number must be 7–15 digits"
-          : null,
-      contactPerson: (value) => (!value ? "Contact person is required" : null),
+      // contactEmail: (value) =>
+      //   !value
+      //     ? "Contact email is required"
+      //     : !/^\S+@\S+\.\S+$/.test(value)
+      //     ? "Invalid email"
+      //     : null,
+      // contactNo: (value) =>
+      //   !value
+      //     ? "Contact number is required"
+      //     : !/^\d{7,15}$/.test(value)
+      //     ? "Contact number must be 7–15 digits"
+      //     : null,
+      // contactPerson: (value) => (!value ? "Contact person is required" : null),
 
       consignee: (value) => (!value ? "Consignee name is required" : null),
       consigneeAddress: (value) =>
@@ -227,7 +227,7 @@ const QuoteApprovePage: React.FC = () => {
         onSubmit={handleSubmit}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 p-4"
       >
-        <TextInput
+        {/* <TextInput
           label="Contact Email"
           placeholder="Enter contact email"
           withAsterisk
@@ -262,7 +262,7 @@ const QuoteApprovePage: React.FC = () => {
               padding: "20px",
             },
           }}
-        />
+        /> */}
 
         {/* Consignee Section */}
         <Fieldset
